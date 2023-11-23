@@ -56,7 +56,7 @@ const RestaurantContainer = () =>{
 
     // fetch restaurant data from data loader
     const fetchRestaurants = async () =>{
-        const response = await fetch("http://localhost:8080/restaurants");
+        const response = await fetch("https://restaurant-recommender-api.onrender.com/restaurants");
         const data = await response.json()
         setRestaurantList(data);
         setFilteredList(data);
